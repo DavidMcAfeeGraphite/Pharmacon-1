@@ -14,19 +14,20 @@
 @end
 
 @implementation Drug
-@synthesize label;
-@synthesize label2;
-@synthesize label3;
-@synthesize label4;
+@synthesize Titlelabel;
+@synthesize Phonecticlabel;
+@synthesize Descriptionlabel;
+@synthesize Purposelabel;
 @synthesize scroller;
 
 -(IBAction)Tweet;{
+    [scroller setScrollEnabled:NO];
     NSLog(@"Tweeting");
     // Create the view controller
     TWTweetComposeViewController *twitter = [[TWTweetComposeViewController alloc] init];
     
-    [twitter addURL:[NSURL URLWithString:[NSString stringWithString:@"http://google.com/"]]];
-    [twitter setInitialText:label3.text];
+    [twitter addURL:[NSURL URLWithString:[NSString stringWithString:@""]]];
+    [twitter setInitialText:Descriptionlabel.text];
     
     [self presentModalViewController:twitter animated:YES];
     
@@ -37,11 +38,13 @@
         
         if (result == TWTweetComposeViewControllerResultCancelled)
             msg = @"Tweet compostion was canceled.";
+        
         else if (result == TWTweetComposeViewControllerResultDone)
             msg = @"Tweet composition completed.";
         
         UIAlertView* alertView = [[UIAlertView alloc] initWithTitle:title message:msg delegate:self cancelButtonTitle:@"Okay" otherButtonTitles:nil];
         [alertView show];
+        [scroller setScrollEnabled:YES];
         
         // Dismiss the controller
         [self dismissModalViewControllerAnimated:YES];
@@ -77,7 +80,7 @@
     [tweetButton setHidden:YES];
     [scroller setScrollEnabled:YES];
 	[scroller setContentSize:CGSizeMake(280, 550)];
-    int numLines = label4.contentSize.height / label4.font.lineHeight;
+    int numLines = Purposelabel.contentSize.height / Purposelabel.font.lineHeight;
 
     switch(numLines)
     {
@@ -132,12 +135,13 @@
             break;
         default:
             break;
-    }
-            [super viewDidLoad];
-       if ([TWTweetComposeViewController canSendTweet]) {
+            }
+    if ([TWTweetComposeViewController canSendTweet]) {
         [tweetButton setHidden:NO];
     }
-
+    
+        [super viewDidLoad];
+       
 }
 - (void)viewDidUnload
 {

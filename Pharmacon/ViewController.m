@@ -83,76 +83,10 @@
         [urlData writeToFile:filePath atomically:YES];
         NSLog(@"Downloaded File");
         
-     
-      
         
     }
     
-    NSError *err = nil;
-    NSString *urla = [[NSString stringWithFormat:@"http://www.pharmacon.site50.net/database/1.xml"] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-    NSString *myTxtFile = [NSString stringWithContentsOfURL:[NSURL URLWithString:urla] encoding:NSUTF8StringEncoding error:&err];
-    [[NSUserDefaults standardUserDefaults] setObject:myTxtFile forKey:@"one"];
-    NSString *url2 = [[NSString stringWithFormat:@"http://www.pharmacon.site50.net/database/2.xml"] 
-                      stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-    NSString *myTxtFile2 = [NSString stringWithContentsOfURL:[NSURL URLWithString:url2] encoding:NSUTF8StringEncoding error:&err];
-    [[NSUserDefaults standardUserDefaults] setObject:myTxtFile2 forKey:@"two"];
-    NSString *url3 = [[NSString stringWithFormat:@"http://www.pharmacon.site50.net/database/3.xml"] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-    NSString *myTxtFile3 = [NSString stringWithContentsOfURL:[NSURL URLWithString:url3] encoding:NSUTF8StringEncoding error:&err];
-    [[NSUserDefaults standardUserDefaults] setObject:myTxtFile3 forKey:@"three"];
-    NSString *url4 = [[NSString stringWithFormat:@"http://www.pharmacon.site50.net/database/4.xml"] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-    NSString *myTxtFile4 = [NSString stringWithContentsOfURL:[NSURL URLWithString:url4] encoding:NSUTF8StringEncoding error:&err];
-    [[NSUserDefaults standardUserDefaults] setObject:myTxtFile4 forKey:@"four"];
-    NSString *url5 = [[NSString stringWithFormat:@"http://www.pharmacon.site50.net/database/5.xml"] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-    NSString *myTxtFile5 = [NSString stringWithContentsOfURL:[NSURL URLWithString:url5] encoding:NSUTF8StringEncoding error:&err];
-    [[NSUserDefaults standardUserDefaults] setObject:myTxtFile5 forKey:@"five"];
-    NSString *url6 = [[NSString stringWithFormat:@"http://www.pharmacon.site50.net/database/6.xml"] 
-                      stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-    NSString *myTxtFile6 = [NSString stringWithContentsOfURL:[NSURL URLWithString:url6] encoding:NSUTF8StringEncoding error:&err];
-    [[NSUserDefaults standardUserDefaults] setObject:myTxtFile6 forKey:@"six"];
-    NSString *url7 = [[NSString stringWithFormat:@"http://www.pharmacon.site50.net/database/7.xml"] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-    NSString *myTxtFile7 = [NSString stringWithContentsOfURL:[NSURL URLWithString:url7] encoding:NSUTF8StringEncoding error:&err];
-    [[NSUserDefaults standardUserDefaults] setObject:myTxtFile7 forKey:@"seven"];
-    NSString *url8 = [[NSString stringWithFormat:@"http://www.pharmacon.site50.net/database/8.xml"] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-    NSString *myTxtFile8 = [NSString stringWithContentsOfURL:[NSURL URLWithString:url8] encoding:NSUTF8StringEncoding error:&err];
-    [[NSUserDefaults standardUserDefaults] setObject:myTxtFile8 forKey:@"eight"];
-    NSString *url9 = [[NSString stringWithFormat:@"http://www.pharmacon.site50.net/database/9.xml"] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-    NSString *myTxtFile9 = [NSString stringWithContentsOfURL:[NSURL URLWithString:url9] encoding:NSUTF8StringEncoding error:&err];
-    [[NSUserDefaults standardUserDefaults] setObject:myTxtFile9 forKey:@"nine"];
-    NSString *url10 = [[NSString stringWithFormat:@"http://www.pharmacon.site50.net/database/10.xml"] 
-                       stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-    NSString *myTxtFile10 = [NSString stringWithContentsOfURL:[NSURL URLWithString:url10] encoding:NSUTF8StringEncoding error:&err];
-    [[NSUserDefaults standardUserDefaults] setObject:myTxtFile10 forKey:@"ten"];
-    NSString *url11 = [[NSString stringWithFormat:@"http://www.pharmacon.site50.net/database/11.xml"] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-    NSString *myTxtFile11 = [NSString stringWithContentsOfURL:[NSURL URLWithString:url11] encoding:NSUTF8StringEncoding error:&err];
-    [[NSUserDefaults standardUserDefaults] setObject:myTxtFile11 forKey:@"eleven"];
-    NSString *url12 = [[NSString stringWithFormat:@"http://www.pharmacon.site50.net/database/12.xml"] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-    NSString *myTxtFile12 = [NSString stringWithContentsOfURL:[NSURL URLWithString:url12] encoding:NSUTF8StringEncoding error:&err];
-    [[NSUserDefaults standardUserDefaults] setObject:myTxtFile12 forKey:@"twelve"];
-    NSString *url13 = [[NSString stringWithFormat:@"http://www.pharmacon.site50.net/database/13.xml"] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-    NSString *myTxtFile13 = [NSString stringWithContentsOfURL:[NSURL URLWithString:url13] encoding:NSUTF8StringEncoding error:&err];
-    [[NSUserDefaults standardUserDefaults] setObject:myTxtFile13 forKey:@"thirteen"];
-    NSString *url14 = [[NSString stringWithFormat:@"http://www.pharmacon.site50.net/database/14.xml"] 
-                       stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-    NSString *myTxtFile14 = [NSString stringWithContentsOfURL:[NSURL URLWithString:url14] encoding:NSUTF8StringEncoding error:&err];
-    [[NSUserDefaults standardUserDefaults] setObject:myTxtFile14 forKey:@"fourteen"];
-    NSString *url15 = [[NSString stringWithFormat:@"http://www.pharmacon.site50.net/database/15.xml"] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-    NSString *myTxtFile15 = [NSString stringWithContentsOfURL:[NSURL URLWithString:url15] encoding:NSUTF8StringEncoding error:&err];
-    [[NSUserDefaults standardUserDefaults] setObject:myTxtFile15 forKey:@"fifteen"];
-    NSString *url16 = [[NSString stringWithFormat:@"http://www.pharmacon.site50.net/database/16.xml"] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-    NSString *myTxtFile16 = [NSString stringWithContentsOfURL:[NSURL URLWithString:url16] encoding:NSUTF8StringEncoding error:&err];
-    [[NSUserDefaults standardUserDefaults] setObject:myTxtFile16 forKey:@"sixteen"];   
-    NSString *url17 = [[NSString stringWithFormat:@"http://www.pharmacon.site50.net/database/17.xml"] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-    NSString *myTxtFile17 = [NSString stringWithContentsOfURL:[NSURL URLWithString:url17] encoding:NSUTF8StringEncoding error:&err];
-    [[NSUserDefaults standardUserDefaults] setObject:myTxtFile17 forKey:@"seventeen"];  
-    NSString *url18 = [[NSString stringWithFormat:@"http://www.pharmacon.site50.net/database/18.xml"] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-    NSString *myTxtFile18 = [NSString stringWithContentsOfURL:[NSURL URLWithString:url18] encoding:NSUTF8StringEncoding error:&err];
-    [[NSUserDefaults standardUserDefaults] setObject:myTxtFile18 forKey:@"eighteen"];  
-    NSString *url19 = [[NSString stringWithFormat:@"http://www.pharmacon.site50.net/database/19.xml"] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-    NSString *myTxtFile19 = [NSString stringWithContentsOfURL:[NSURL URLWithString:url19] encoding:NSUTF8StringEncoding error:&err];
-    [[NSUserDefaults standardUserDefaults] setObject:myTxtFile19 forKey:@"ninteenth"]; 
-    NSString *url20 = [[NSString stringWithFormat:@"http://www.pharmacon.site50.net/database/20.xml"] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-    NSString *myTxtFile20 = [NSString stringWithContentsOfURL:[NSURL URLWithString:url20] encoding:NSUTF8StringEncoding error:&err];
-    [[NSUserDefaults standardUserDefaults] setObject:myTxtFile20 forKey:@"twenty"];  
+   
 }
       
         
@@ -163,7 +97,6 @@
     }
 }
 
-//CONCEPT SHOWS HOW TO GET DATA FROM A URL - THIS SHALL BE GENERATED AND SHALL CHANGE WHEN I GET MORE INFORMATION FROM PHILIPP PLUS IT SHALL BE RELEVANT FOR MORE URLS BASED ON THE COMMAND FROM THE SERVER - THIS SHALL EVOLVE
 -(IBAction)downloadSimulation {
     
     NSError *err = nil;
@@ -196,6 +129,9 @@
     NSString *url9 = [[NSString stringWithFormat:@"http://www.pharmacon.site50.net/database/9.xml"] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     NSString *myTxtFile9 = [NSString stringWithContentsOfURL:[NSURL URLWithString:url9] encoding:NSUTF8StringEncoding error:&err];
     [[NSUserDefaults standardUserDefaults] setObject:myTxtFile9 forKey:@"nine"];
+    
+    NSLog(@"50 Percent Completed");
+    
     NSString *url10 = [[NSString stringWithFormat:@"http://www.pharmacon.site50.net/database/10.xml"] 
                       stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     NSString *myTxtFile10 = [NSString stringWithContentsOfURL:[NSURL URLWithString:url10] encoding:NSUTF8StringEncoding error:&err];
@@ -231,6 +167,8 @@
     NSString *url20 = [[NSString stringWithFormat:@"http://www.pharmacon.site50.net/database/20.xml"] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     NSString *myTxtFile20 = [NSString stringWithContentsOfURL:[NSURL URLWithString:url20] encoding:NSUTF8StringEncoding error:&err];
     [[NSUserDefaults standardUserDefaults] setObject:myTxtFile20 forKey:@"twenty"];  
+    NSLog(@"Done Downloading!");
+
     
 }
 
@@ -258,8 +196,4 @@
 {
     [super viewDidUnload];
 }
-
-
-
-
 @end

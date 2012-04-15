@@ -124,9 +124,6 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
-                                        <connections>
-                                            <segue destination="Hm9-IP-iTh" kind="modal" id="Cb2-5n-Aew"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" id="w8I-pz-7QN">
                                         <rect key="frame" x="0.0" y="110" width="296" height="44"/>
@@ -229,7 +226,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Hm9-IP-iTh" kind="modal" modalTransitionStyle="crossDissolve" id="WtU-CG-La5"/>
+                                    <segue destination="Hm9-IP-iTh" kind="modal" modalTransitionStyle="crossDissolve" id="rZw-fz-fG1"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -376,7 +373,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="YQZ-f0-ocR" kind="modal" modalTransitionStyle="crossDissolve" id="6BM-dM-Ida"/>
+                                    <segue destination="YQZ-f0-ocR" kind="modal" modalTransitionStyle="crossDissolve" id="fbC-pD-F2c"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="DESCRIPTION" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="xon-ar-1PY">
@@ -475,10 +472,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="Descriptionlabel" destination="EPO-Pw-obx" id="eoZ-eh-QuL"/>
+                        <outlet property="Phonecticlabel" destination="mgy-F7-Zcv" id="wdi-ud-MKh"/>
                         <outlet property="PlayButton" destination="nFj-44-zRy" id="8B5-b5-a11"/>
-                        <outlet property="label2" destination="mgy-F7-Zcv" id="qkl-NO-c2d"/>
-                        <outlet property="label3" destination="EPO-Pw-obx" id="4Bw-nS-JGl"/>
-                        <outlet property="label4" destination="OiF-q0-hqz" id="qQF-S0-CXD"/>
+                        <outlet property="Purposelabel" destination="OiF-q0-hqz" id="tk6-eK-eNH"/>
+                        <outlet property="Titlelabel" destination="TAg-Wa-Bb2" id="IfA-mu-YBe"/>
                         <outlet property="scroller" destination="f2F-cZ-PPA" id="jiy-lU-RLK"/>
                         <outlet property="textView" destination="OiF-q0-hqz" id="L91-ZF-cYA"/>
                         <outlet property="tweetButton" destination="tF5-bh-bbt" id="pHj-2d-mXK"/>
@@ -905,11 +903,11 @@
             <relationships>
                 <relationship kind="action" name="Play"/>
                 <relationship kind="action" name="Tweet"/>
+                <relationship kind="outlet" name="Descriptionlabel" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="Phonecticlabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="PlayButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="label" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="label2" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="label3" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="label4" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="Purposelabel" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="Titlelabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="scroller" candidateClass="UIScrollView"/>
                 <relationship kind="outlet" name="textView" candidateClass="UITextView"/>
                 <relationship kind="outlet" name="tweetButton" candidateClass="UIButton"/>
@@ -968,7 +966,4 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
-    <inferredMetricsTieBreakers>
-        <segue reference="lVz-fm-kQA"/>
-    </inferredMetricsTieBreakers>
 </document>

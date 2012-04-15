@@ -18,10 +18,10 @@
 
 @interface Drug : UIViewController <AVAudioPlayerDelegate>{
     AVAudioPlayer *audioPlayer;
-    IBOutlet UILabel *label;
-    IBOutlet UILabel *label2;
-    IBOutlet UITextView *label3;
-    IBOutlet UITextView *label4;
+    IBOutlet UILabel *Titlelabel;
+    IBOutlet UILabel *Phonecticlabel;
+    IBOutlet UITextView *Descriptionlabel;
+    IBOutlet UITextView *Purposelabel;
     IBOutlet UIScrollView *scroller; 
     IBOutlet UIButton *tweetButton;
     IBOutlet UITextView *textView;
@@ -31,10 +31,10 @@
 }
 -(IBAction)Play;
 -(IBAction)Tweet;
-@property (nonatomic, retain)IBOutlet UILabel *label;
-@property (nonatomic, retain)IBOutlet UILabel *label2;
-@property (nonatomic, retain)IBOutlet UITextView *label3;
-@property (nonatomic, retain)IBOutlet UITextView *label4;
+@property (nonatomic, retain)IBOutlet UILabel *Titlelabel;
+@property (nonatomic, retain)IBOutlet UILabel *Phonecticlabel;
+@property (nonatomic, retain)IBOutlet UITextView *Descriptionlabel;
+@property (nonatomic, retain)IBOutlet UITextView *Purposelabel;
 @property (nonatomic, retain)IBOutlet UIScrollView *scroller; 
 
 @end
